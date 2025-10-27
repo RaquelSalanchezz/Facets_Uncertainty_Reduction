@@ -1,4 +1,4 @@
-# The Many facets of Uncertainty Reduction
+# The Many Facets of Uncertainty Reduction
 
 ## Abstract
 Uncertainty management is key to successful achievement of system goals in self-adaptation. An important aspect to such management is employing various mechanisms to reduce uncertainty. Although reducing uncertainty does in theory result in a better characterization of the current and future states of the system and the environment, the tradeoffs and multiple facets associated with employing such mechanisms are often nuanced and not always easily understood. In this paper, we articulate a description of some of the abstruse facets entailed by uncertainty reduction, illustrating them on a self-adaptive CPS in the electric vehicle charging domain.
