@@ -28,6 +28,8 @@ This repository contains the following items:
   * `ExecuteGeneticAlgorithm.java`: this file handles the execution of the GSMCA.
   * `ExecuteMILP.java`: this file is responsible for launching the MILP algorithm from Java.
   * `ModelCheckFromFiles.java`: this file is responsible for evaluate the model launching PRISM. It consist on a version of a PRISM API example adapted to our project.
+* `Clustering_Algorithms:` in this folder we can find the Clustering_Algorithm.ipynb file, which contains the code of the clustering algorithm.
+* `Experiments_Visualization:` in this folder we can find the Experiments_Visualization.ipynb file, which contains the code to simulate some experiments and generate the graphs.
 * `Vehicles_Data:` in this folder we can find the data and configuration files and PRISM models (PRISM_models folder) used to run the experiments.
   * `vehicles_X.csv`: data files used to run the algorithms in the experiments.
   * `configuration_vehicles.json`: configuration file for vehicles scenario.
