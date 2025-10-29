@@ -29,7 +29,7 @@ This repository contains the following items:
   * `ExecuteMILP.java`: this file is responsible for launching the MILP algorithm from Java.
   * `ModelCheckFromFiles.java`: this file is responsible for evaluate the model launching PRISM. It consist on a version of a PRISM API example adapted to our project.
 * `Vehicles_Data:` in this folder we can find the data and configuration files and PRISM models (PRISM_models folder) used to run the experiments.
-  * `vehicles_X_csv`, `vehicles.txt` and `vehiclesdata.txt`: data files used to run the algorithms in the experiments.
+  * `vehicles_X_csv`: data files used to run the algorithms in the experiments.
   * `configuration_vehicles.json`: configuration file for vehicles scenario.
 
 ## Configuration File Structure
