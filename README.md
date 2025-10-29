@@ -28,3 +28,27 @@ This repository contains the following items:
   * `ExecuteGeneticAlgorithm.java`: this file handles the execution of the GSMCA.
   * `ExecuteMILP.java`: this file is responsible for launching the MILP algorithm from Java.
   * `ModelCheckFromFiles.java`: this file is responsible for evaluate the model launching PRISM. It consist on a version of a PRISM API example adapted to our project.
+* `Vehicles_Data:` in this folder we can find the data and configuration files and PRISM models (PRISM_models folder) used to run the experiments.
+  * `vehicles_X_csv`, `vehicles.txt` and `vehiclesdata.txt`: data files used to run the algorithms in the experiments.
+  * `configuration_vehicles.json`: configuration file for vehicles scenario.
+
+## Configuration File Structure
+The configuration files define a standardized schema for modeling resource allocation scenarios, such as electric vehicle charging or robotic patient feeding. Each file describes two main classes: a **Consumer** (e.g., ElectricVehicle, Patient, Crop) and a **Resource** (e.g., Charger, Robot), including their attributes and methods.
+
+The configuration sets key parameters like the number of entities and resources, their states (AVAILABLE, ACTIVE, DONE), progress tracking variables, speed and capacity values, and action labels (start_action, release_action, action) that drive transitions in the PRISM model. It also includes reward options (e.g., reward_acum, reward_timespan) and specifies the output file name.
+
+This modular design allows the generator to easily adapt to different domains by simply changing the input file, supporting flexibility, reusability, and scalability.
+
+## Running the Experiments
+To run the code, you need to do it within Eclipse IDE for Java and Visual Studio Code for Python or similar environment.The following explains how to run algorithms, with the environments previously installed:
+
+### Download and import the Java project from GitHub into Eclipse
+1. First, go to the GitHub repository, click on Code, and select Download ZIP. Extract the downloaded ZIP file to your preferred folder. Alternatively, if you have Git installed, you can clone the repository by using the command "git clone" <repository URL> in your terminal.
+
+2. Once you have the project files, open Eclipse and navigate to File > Import > Existing Projects into Workspace. In the dialog that appears, choose Select root directory and browse to the folder where you extracted the project. Then, click Finish to import it into Eclipse.
+
+3. If the project is not recognized as a Java Project, right-click on it in the Project Explorer, go to Configure > Convert to Java Project, and Eclipse will set it up as a Java Project. Additionally, make sure all required dependencies are configured in the Build Path to avoid errors.
+
+### Execution of the code to generate the charts
+You can also generate the evaluation charts using the code found in evaluation_charts.ypinb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data to create new graphs, you can do so by editing the data matrices at the beginning of the code that generates each graph.
+
