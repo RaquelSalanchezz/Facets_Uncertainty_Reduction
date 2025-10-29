@@ -29,7 +29,7 @@ This repository contains the following items:
   * `ExecuteMILP.java`: this file is responsible for launching the MILP algorithm from Java.
   * `ModelCheckFromFiles.java`: this file is responsible for evaluate the model launching PRISM. It consist on a version of a PRISM API example adapted to our project.
 * `Vehicles_Data:` in this folder we can find the data and configuration files and PRISM models (PRISM_models folder) used to run the experiments.
-  * `vehicles_X_csv`: data files used to run the algorithms in the experiments.
+  * `vehicles_X.csv`: data files used to run the algorithms in the experiments.
   * `configuration_vehicles.json`: configuration file for vehicles scenario.
 
 ## Configuration File Structure
@@ -50,5 +50,5 @@ To run the code, you need to do it within Eclipse IDE for Java and Visual Studio
 3. If the project is not recognized as a Java Project, right-click on it in the Project Explorer, go to Configure > Convert to Java Project, and Eclipse will set it up as a Java Project. Additionally, make sure all required dependencies are configured in the Build Path to avoid errors.
 
 ### Execution of the code to generate the charts
-You can also generate the evaluation charts using the code found in evaluation_charts.ypinb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data to create new graphs, you can do so by editing the data matrices at the beginning of the code that generates each graph.
+You can also execute some of the experiments and generate charts using the code found in evaluation_charts.ypinb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data or the parameters to create new experiments and grapg graphs, you can do so by editing the parameters and the data structures at the beginning of the code that generates each graph.
 
