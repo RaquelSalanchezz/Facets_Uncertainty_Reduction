@@ -30,8 +30,8 @@ This repository contains the following items:
   * `ModelCheckFromFiles.java`: this file is responsible for evaluate the model launching PRISM. It consist on a version of a PRISM API example adapted to our project.
 * `Clustering_Algorithms:` in this folder we can find the Clustering_Algorithm.ipynb file, which contains the code of the clustering algorithm.
 * `Experiments_Visualization:` in this folder we can find the Experiments_Visualization.ipynb file, which contains the code to simulate some experiments and generate the graphs.
-* `Vehicles_Data:` in this folder we can find the data and configuration files and PRISM models (PRISM_models folder) used to run the experiments.
-  * `vehicles_X.csv`: data files used to run the algorithms in the experiments.
+* `Vehicles_Data:` in this folder we can find the data and configuration files used to run the experiments.
+  * `vehicles_X.csv`: data files used to run the algorithms in the experiments. We find files with different clustering separation between de groups and files with different number of punctual and unpunctual drivers. You can create new customized files using some methonds found in the Clustering_Algorithm file.
   * `configuration_vehicles.json`: configuration file for vehicles scenario.
 
 ## Configuration File Structure
@@ -50,6 +50,23 @@ To run the code, you need to do it within Eclipse IDE for Java and Visual Studio
 2. Once you have the project files, open Eclipse and navigate to File > Import > Existing Projects into Workspace. In the dialog that appears, choose Select root directory and browse to the folder where you extracted the project. Then, click Finish to import it into Eclipse.
 
 3. If the project is not recognized as a Java Project, right-click on it in the Project Explorer, go to Configure > Convert to Java Project, and Eclipse will set it up as a Java Project. Additionally, make sure all required dependencies are configured in the Build Path to avoid errors.
+
+### Execution of the clustering algorithms
+You can execute the clustering experiments using the code found in Clustering_Algorithm.ipynb. To do so, open the notebook in Google Colab, Jupyter Notebook, or a similar environment and run all cells in order. The notebook will load the input data from the Vehicles_Data/ folder, apply clustering methods (such as K-Means) , and display the corresponding visualizations and comparisons. If you want to modify the clustering parameters (for example, the number of clusters, distance metric, or initialization method) or use different input data, you can edit the configuration variables defined at the beginning of the code. Once executed, you can export the clustered results using "df.to_csv('Vehicles_Data/vehicles_clustered.csv', index=False)", and the generated clusters can later be used to execute the main algorithm and visualization scripts located under Experiments_Visualization/ (as explained in the following sections)..
+
+### Running the Genetic Algorithm
+1. **Select the file ExecuteGeneticAlgorithm.java**
+   - Ensure the correct file is open.
+     
+2. **Verify the Paths to the Python Files**
+   - Double-check that the lines executing the Python scripts and functions use the correct paths in the following format:
+     ```java
+     interpreter.execfile("C:\\Users\\usuario\\Escritorio\\project\\geneticAlgorithm.py");
+     ```
+   - Ensure the Python files (clasesAG.py and runGA.py) exist in the specified location.
+     
+3. **Compile and Run the Program**
+   - Select **Run As > Java Application**.
 
 ### Execution of the code to generate the charts
 You can also execute some of the experiments and generate charts using the code found in evaluation_charts.ypinb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data or the parameters to create new experiments and grapg graphs, you can do so by editing the parameters and the data structures at the beginning of the code that generates each graph.
