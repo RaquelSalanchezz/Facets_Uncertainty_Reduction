@@ -63,11 +63,11 @@ You can execute the clustering experiments using the code found in Clustering_Al
      ```java
      interpreter.execfile("C:\\Users\\usuario\\Escritorio\\project\\geneticAlgorithm.py");
      ```
-   - Ensure the Python files (clasesAG.py and runGA.py) exist in the specified location.
+   - Ensure the Python files (ClassesAG.py and runGA.py) exist in the specified location.
      
 3. **Compile and Run the Program**
    - Select **Run As > Java Application**.
 
 ### Execution of the code to generate the charts
-You can also execute some of the experiments and generate charts using the code found in evaluation_charts.ypinb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data or the parameters to create new experiments and grapg graphs, you can do so by editing the parameters and the data structures at the beginning of the code that generates each graph.
+You can also execute some of the experiments and generate charts using the code found in Evaluation_Charts.ipynb. To achieve this, simply run the cells in Google Colab or similar environment in order, and various graphs will be displayed as output. If you wish to modify the data or the parameters to create new experiments and graphs, you can do so by editing the parameters and the data structures at the beginning of the code that generates each graph.
 
