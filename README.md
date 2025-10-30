@@ -31,7 +31,7 @@ This repository contains the following items:
 * `Clustering_Algorithms:` in this folder we can find the Clustering_Algorithm.ipynb file, which contains the code of the clustering algorithm.
 * `Experiments_Visualization:` in this folder we can find the Experiments_Visualization.ipynb file, which contains the code to simulate some experiments and generate the graphs.
 * `Vehicles_Data:` in this folder we can find the data and configuration files used to run the experiments.
-  * `vehicles_X.csv`: data files used to run the algorithms in the experiments. We find files with different clustering separation between de groups and files with different number of punctual and unpunctual drivers. You can create new customized files using some methonds found in the Clustering_Algorithm file.
+  * `vehicles_X.csv`: data files used to run the algorithms in the experiments. These files include different clustering separations between groups, as well as variations in the number of punctual and unpunctual drivers. You can create new customized files using the methods provided in the Clustering_Algorithm notebook.
   * `configuration_vehicles.json`: configuration file for vehicles scenario.
 
 ## Configuration File Structure
